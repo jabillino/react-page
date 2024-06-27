@@ -1,0 +1,132 @@
+article div.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: #0C3C6A;
+}
+
+a {
+    color: white;
+    font-weight: 500;
+    text-decoration: inherit;
+    display: flow;
+}
+
+.contenedor_cuerpo {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor_img {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    gap: 20px;
+}
+
+.contenedor_img h1,
+h3 {
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.contenedor_zapato {
+    display: flex;
+    background-color: #0c2d4d;
+    width: 100%;
+}
+.contenedor_zapato img{
+    width: 50%;
+    height: 50%;
+}
+
+.contenedor_zapato button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    padding-block: 10px;
+}
+
+.contenedor_img img {
+    width: 200px;
+    height: 100%;
+}
+
+.texto_zapato {
+    padding-inline: 10px;
+
+}
+
+.contenedor_izquierdo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width:auto;
+    text-align: center;
+}
+
+.contenedor_izquierdo img {
+    height: 60%;
+    background-color: #fa484833;
+    border-radius: 30%;
+}
+
+.contenedor_izquierdo h1,
+h2 {
+    color: white;
+    margin: 0;
+}
+.contenedor_derecho p{
+    display: flex;
+    text-align: center;
+    
+}
+.contenedor_derecho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+.contenedor_derecho button {
+    color: #0C3C6A;
+    background-color: #fa4848;
+    border: 0;
+    padding: 10px;
+    font-size: 20px;
+    width: 300px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+@media (width<1100px) {
+    .contenedor_cuerpo .contenedor_img{
+        flex-direction: column;
+    }
+}
+@media (width<850px){
+    .contenedor_cuerpo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor_img{
+        flex-direction: column;
+    }
+}
+@media(width<550px){
+    div.contenedor_izquierdo img{
+        width: 70%;
+    }
+}

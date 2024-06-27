@@ -1,0 +1,143 @@
+.navbar {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin-top: 10px;
+  width: 80%;
+  border-radius: 60px;
+  align-items: center;
+}
+
+.navbar img {
+  width: 100px;
+  padding-left: 50px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-right: 20px;
+}
+
+.menu_item {
+  position: relative;
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu_item a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 20px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.menu_item a:hover {
+  color: #ffffff;
+}
+
+.menu_item:hover {
+  background-color: #ff4b4b;
+  border-radius: 5px;
+}
+
+.submenu {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  padding: 0;
+  background-color: #444;
+  width: 100%;
+}
+
+.menu_item:hover .submenu {
+  display: flex;
+  color: blue;
+}
+
+.submenu_item a {
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.submenu_item a:hover {
+  background: #ff7f7f;
+  color: blue;
+  border-radius: 5px;
+}
+
+img.lineas {
+  width: 40px;
+  padding: 0;
+  float: right;
+  display: none;
+  margin-right: 20px;
+}
+
+.desplegable {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (width<850px) {
+  img.logo {
+    width: 14%;
+    height: 100%;
+    padding-left: 8%;
+  }
+
+  .desplegable {
+    flex-direction: column;
+  }
+
+  .menu {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 76px;
+    right: 10%;
+    padding: 0;
+    background-color: #444;
+    border-radius: 20px 10px 10px 10px;
+    margin: 0;
+  }
+
+  .desplegable:hover .menu {
+    background-color: #333;
+    display: flex;
+  }
+
+  .submenu {
+    top: 0;
+    width: auto;
+    align-items: center;
+    right: 100%;
+  }
+
+  img.lineas {
+    padding: 0;
+    display: block;
+  }
+}
+
+@media (width<600px) {
+  img.logo {
+    width: 70px;
+    height: 100%;
+    padding-left: 8%;
+  }
+
+}
